@@ -9,16 +9,23 @@ The overall process follows these steps:
 
 
 ## Input data
-Publicly available vector map layers from the FOT (insert proper name and ref) were used. In total 43 (- de to marklag og ais) different layers was used (see appendix 1 for details).
-## Conversion
-Each of the vector maps were initially converted to raster maps with a resolution of 1 m * 1 m.
+Publicly available vector map layers from the FOT (insert proper name and ref) were used. In total XX different layers were used (see appendix 1 for details).
 
-## Making mosaic
+## Conversion
+Each of the vector maps were initially converted to raster maps with a resolution of 1 m * 1 m. To avoid gaps between feature layers, a buffer was added around all linear features (#ld: hmm also the top one? Check up). In most cases this buffer will be covered by other layers. In the final map only XXX cells are buffers. 
+
+### Special section about fields
+#### The handling of the actual field polygons
+
+#### Stuff about 
+
+## Combining the layers
+Map layers were organized into thematic layers before combining to the final map. E.g. all layers with roads, road verges, road side slopes, tracks, railroads etc. were combined in to a *road* theme. Same for built up areas, nature, wet nature, water and cultural areas. 
 
 ## Final map
 Landscape maps for ALMaSS are surface covering and have a resolution of 1 m * 1 m. 
 
-
-
-## Tools
+## Mapping Tools
 All handling and analysis of spatial data was done using ArcGIS and the python library *arcpy*. 
+
+## Classification of farms
