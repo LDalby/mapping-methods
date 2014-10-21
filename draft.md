@@ -9,15 +9,17 @@ The overall process follows these steps:
 
 
 ## Input data
-Publicly available vector map layers from the FOT (insert proper name and ref) were used. In total XX different layers were used (see appendix 1 for details).
+We used publicly available vector map layers from the common public geographical administration data (FOT-data version 4.0, downloaded month year, insert URL). In total XX different layers were used (see appendix 1 for details). All input data  initially used the UTM zone 32/ETRS89 coordinate system.
 
 ## Conversion
 Each of the vector maps were initially converted to raster maps with a resolution of 1 m * 1 m. To avoid gaps between feature layers, a buffer was added around all linear features (#ld: hmm also the top one? Check up). In most cases this buffer will be covered by other layers. In the final map only XXX cells are buffers. 
 
 ### Special section about fields
-#### The handling of the actual field polygons
++ Where did the field data come from?
 
-#### Stuff about 
+#### The handling of the actual field polygons
++ How was it processed?
+
 
 ## Combining the layers
 Map layers were organized into thematic layers before combining to the final map. E.g. all layers with roads, road verges, road side slopes, tracks, railroads etc. were combined in to a *road* theme. Same for built up areas, nature, wet nature, water and cultural areas. 
