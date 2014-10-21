@@ -5,7 +5,8 @@ The overall process follows these steps:
 + Convert vector to raster maps where the map has:
     * Value 1 where the feature is absent.
     * Where the feature is present it gets a value corresponding to the layers ranking in the following stacking (see below).
-+ Stack the rasters in a sensible order (i.e. roads on top of fields etc.). This is determined by the value of layers, where higher values stack on top of lower ones.  
++ Combine individual raster maps in theme maps (e.g., various road types, paths and railway tracks in a transportation theme)
++ Stack the themes in a reasonable order (i.e. roads on top of fields etc.). This is determined by the value of layers, where higher values stack on top of lower ones.  
 
 
 ## Input data
