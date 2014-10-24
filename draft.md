@@ -15,6 +15,8 @@ We used publicly available vector map layers from the common public geographical
 ## Conversion
 Each of the vector maps were initially converted to raster maps with a resolution of 1 m * 1 m. To avoid gaps between feature layers, a buffer was added around all linear features (#ld: hmm also the top one? Check up). In most cases this buffer will be covered by other layers. In the final map only XXX cells are buffers. 
 
+A buffer was also added around point features such as wind mills, pylons and individual trees to get a meaningfull raster representation of these features.
+
 ### Special section about fields
 + Where did the field data come from?
 
