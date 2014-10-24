@@ -10,11 +10,13 @@ The overall process follows these steps:
 
 
 ## Input data
-We used publicly available vector map layers from the common public geographical administration data (FOT-data version 4.0, downloaded month year, insert URL). In total XX different layers were used (see appendix 1 for details). All input data  initially used the UTM zone 32/ETRS89 coordinate system.
+We used publicly available vector map layers from the common public geographical administration data (FOT-data version 4.0, downloaded month year, insert URL). Agricultural fields are not part of the FOT-data, but are available from XXX. Lastly, in the rare cases where an area was not covered in neither the FOT-data nor the XXX, we used the Area Information System data, which is a surface covering map with xxx different landcover types for Denmark
+
+In total XX different layers were used (see appendix 1 for details). All input data  initially used the UTM zone 32/ETRS89 coordinate system.
 
 ## Conversion
 Each of the vector maps were initially converted to raster maps with a resolution of 1 m * 1 m. 
-Linear features are described as their centre line in the FOT-data. To get a meaningful raster representation of these features, a buffer was added when converting to raster. For example for large roads (width 10m) we added a 5m buffer around the centre line. Same procedure was followed for other linear features (e.g. streams and hedgerows). A similar procedure was followed for  point features such as wind mills, pylons and individual trees which are represented as their centre points in the FOT-data.
+Linear features are described as their centre line in the FOT-data. To get a meaningful raster representation of these features, a buffer was added when converting to raster. For example for large roads (width 10m) we added a 5m buffer around the centre line. Same procedure was followed for other linear features (e.g. streams and hedgerows). A similar procedure was followed for  point features such as wind turbines, tele masts and individual trees which are represented as their centre points in the FOT-data.
 
 
 
