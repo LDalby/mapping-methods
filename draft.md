@@ -23,7 +23,7 @@ Linear features are described as their centre line in the FOT-data. To get a mea
 
 
 ### Special section about fields
-+ Where did the field data come from?
+The Danish AgriFish Agency ( under the Ministry of Food, Agriculture and Fisheries) maintains a maps of fields and a database of crops grown in Denmark. The database is updated each year. Farmers are obliged to report for each individual field the crop they intend to grow the following year. The data set used for this study stems from 2012 where more than 45.000 farmers contributed to the database. The data set makes it possible for each field to identify the farmer who owned (or managed) it and the actual crop grown.
 
 #### The handling of the actual field polygons
 + How was it processed?
