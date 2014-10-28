@@ -6,7 +6,7 @@ The overall process follows these steps:
     * Value 1 where the feature is absent.
     * Where the feature is present it gets a value corresponding to the layers ranking in the following stacking (see below).
 + Combine individual raster maps in theme maps (e.g., various road types, paths and railway tracks in a transportation theme)
-+ Stack the themes in a reasonable order (i.e. roads on top of fields etc.). This is determined by the value of layers, where higher values stack on top of lower ones.  
++ Stack the themes in a reasonable order (i.e. roads on top of fields etc.). This is determined by the value of layers, where higher values stack on top of lower ones.  (NB: ikke kun; det gælder mere inden for hvert tema. Vi styrer også den relative værdi af temaerne, når mosaikken sættes sammen)
 
 
 ## Input data
@@ -50,4 +50,4 @@ A buffer was also added around point features such as wind mills, pylons and ind
 
 We added a buffer around features represented as lines in the FOT-data to  
 
-For example roads are represented as their centre line
+For example roads are represented as their centre line - (NB - hvor ikke kun vejmidten, men også kanterne er digitaliserede, bruger vi dem. I de tilfælde er vejene jo reelt polygoner. Men det komplicerer jo, at det kan gøres på begge måder, så måske skal vi holde os til den simple, der jo under alle omstændigheder gælder for hele landet)
