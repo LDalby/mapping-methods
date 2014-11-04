@@ -4,9 +4,11 @@
 The overall process follows these steps:
 + Convert vector to raster maps where the map has:
     * Value 1 where the feature is absent.
-    * Where the feature is present it gets a value corresponding to the layers ranking in the following stacking (see below).
-+ Combine individual raster maps in theme maps (e.g., various road types, paths and railway tracks in a transportation theme)
-+ Stack the themes in a reasonable order (i.e. roads on top of fields etc.). This is determined by the value of layers, where higher values stack on top of lower ones.  (NB: ikke kun; det gælder mere inden for hvert tema. Vi styrer også den relative værdi af temaerne, når mosaikken sættes sammen)
+    * Where the feature is present, it gets a value corresponding to the layers ranking in the following stacking into thematic layers (see below).
++ Combine individual raster maps in theme maps (e.g., various road types, paths and railway tracks in a transportation theme). The stacking order of the individual layers within a theme is determined by the value in the raster where the feature was present.
++ Stack the themes in a reasonable order (i.e. roads on top of fields etc.). 
+
+
 
 
 ## Input data
@@ -23,7 +25,7 @@ Linear features are described as their centre line in the FOT-data. To get a mea
 
 
 ### Special section about fields
-The Danish AgriFish Agency ( under the Ministry of Food, Agriculture and Fisheries) maintains a maps of fields and a database of crops grown in Denmark. The database is updated each year. Farmers are obliged to report for each individual field the crop they intend to grow the following year. The data set used for this study stems from 2012 where more than 45.000 farmers contributed to the database. The data set makes it possible for each field to identify the farmer who owned (or managed) it and the actual crop grown.
+The Danish AgriFish Agency ( under the Ministry of Food, Agriculture and Fisheries) maintains a map of all fields and a database of crops grown in Denmark. The database is updated annually. Farmers are obliged to report for each individual field the crop they intend to grow the following year. The data set used for this study stems from 2012 where more than 45.000 farmers contributed to the database. The data set makes it possible to identify the  owner (or manager) of each field and the actual crop grown on it.
 
 #### The handling of the actual field polygons
 + How was it processed?
@@ -37,6 +39,8 @@ Landscape maps for ALMaSS are surface covering and have a resolution of 1 m * 1 
 
 ## Mapping Tools
 All handling and analysis of spatial data was done using ArcGIS and the python library *arcpy*. 
+
+The pyton script used to generate the maps used here is freely available on Github (url).
 
 ## Classification of farms
 
